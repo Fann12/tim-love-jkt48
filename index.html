@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOVE</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Preloader dengan hitungan persen -->
+<div class="pre"><small>Itadaki Love</small><b><span id="pct">0</span>%</b></div>
+<div class="wipe" id="wipe"></div>
+<div class="cd" id="cd"></div><div class="cr" id="cr"></div>
+
+<header class="hd">
+  <a href="#home" class="logo" data-cur="Beranda">LOVE✿</a>
+  <button id="mb" data-cur="Menu">Menu</button>
+</header>
+<nav class="menu" id="menu">
+  <a href="#home">Beranda</a>
+  <a href="#work">Karakter</a>
+  <a href="#layanan">Fitur</a>
+  <a href="#main">Main</a>
+</nav>
+
+<!-- ========== HALAMAN UTAMA ========== -->
+<div id="home">
+
+  <section class="hero" data-go>
+    <h1 id="h1">
+      <span class="ln"><span style="--i:0">Turun ke</span></span>
+      <span class="ln"><span style="--i:1">kedalaman</span></span>
+      <span class="ln"><span style="--i:2">Cinta</span></span>
+    </h1>
+    <div class="hrow">
+      <p class="ln"><span style="--i:3">Ratusan Cinta, Cinta tanpa akhir.</span></p>
+      <a href="#karakter-tideweaver" class="bigbtn mag" data-cur="Main">Tim<br>Love</a>
+    </div>
+    <span class="scr">scroll ↓</span>
+  </section>
+
+  <div class="mq"><div id="mqi"><span>LOVE ✿ TURUN KE CINTA ✿ </span></div></div>
+
+  <section class="ab"><p id="ab">Dengan semangat "Satu Hati, Satu Dukungan", kami percaya bahwa dukungan kecil dari setiap fans dapat menjadi 
+    energi besar bagi para member untuk terus berkembang dan memberikan yang terbaik.</p></section>
+
+  <section id="work" class="work">
+    <div class="wh"><h2>Karakter</h2><span id="cnt">4</span></div>
+    <div id="rows"></div>
+  </section>
+
+  <section id="layanan" class="sv">
+    <h2>Kenapa Love</h2>
+    <ul>
+      <li>Pertarungan cinta</li><li>Dunia luas dengan cinta </li><li>Main bareng</li>
+    </ul>
+  </section>
+
+  <section id="main" class="cta" data-go>
+    <h2><span class="ln"><span style="--i:0">Siap</span></span><span class="ln"><span style="--i:1">menyelam?</span></span></h2>
+    <a href="#karakter-tideweaver" class="bigbtn mag alt" data-cur="Main">Tim<br>Love</a>
+    <div class="soc">
+      <a href="https://x.com/usernamekamu" target="_blank" rel="noopener" data-cur="X">X</a>
+      <a href="https://instagram.com/usernamekamu" target="_blank" rel="noopener" data-cur="IG">Instagram</a>
+      <a href="https://tiktok.com/@usernamekamu" target="_blank" rel="noopener" data-cur="TikTok">TikTok</a>
+    </div>
+    <p class="cp">© 2026 Love.</p>
+  </section>
+</div>
+
+<!-- ========== HALAMAN PROFIL KARAKTER (diisi script.js) ========== -->
+<section id="pf">
+  <a href="#work" class="back" data-cur="Kembali">← Kembali ke karakter</a>
+  <p class="crumb"><a href="#home">Beranda</a> / <a href="#work">Karakter</a> / <span id="pc"></span></p>
+  <h2 class="pt"><span class="ln"><span>Profil Karakter</span></span></h2>
+  <div class="pg">
+    <figure class="fr"><div class="photo" id="photo"></div><figcaption id="pn"></figcaption></figure>
+    <div>
+      <span class="tag" id="pt"></span>
+      <h3 id="ph"></h3>
+      <table class="bio" id="bio"></table>
+    </div>
+  </div>
+  <div class="pnav"><a id="pPrev" href="#" data-cur="Sebelumnya"></a><a id="pNext" href="#" data-cur="Berikutnya"></a></div>
+</section>
+
+<div class="peek" id="peek"></div>
+<script src="script.js"></script>
+</body>
+</html>
